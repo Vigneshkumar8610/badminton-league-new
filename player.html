@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton League</title>
+</head>
+<style>
+    #nav-item {
+        list-style: none;
+        float: right;
+        margin-left: 15px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    nav ul li {
+      list-style: none;
+      float: right;
+      margin-left: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      display: inline-block;
+    }
+
+    form {
+      display: block;
+      color: brown;
+      padding: 10px;
+      background-color: #fff;
+      margin: 0 15px;
+      border-radius: 5px;
+    }
+
+    input[type="text"] {
+      margin-left: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button[onclick="addPlayer()"] {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    button[onclick="removePlayer()"] {
+      background-color: #f44336;
+      color: white;
+    }
+
+    .action-section {
+      padding: 10px;
+      margin: 0 15px;
+      background-color: #fff;
+      border-radius: 5px;
+    }
+
+    h3 {
+      text-align: left;
+      padding-left: 15px;
+      color: #333;
+    }
+
+    #playerList {
+      text-align: left;
+      padding-left: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+</style>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="nav-item"><a href="leaderBoard.html"> Leaderboard / Stats</a></li>
+                <li id="nav-item"><a href="matchTracking.html">Match Tracking </a></li>
+                <li id="nav-item"><a href="index.html">Home Page</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <form style="display:block;color: brown; padding: 10px;">
+        <label for="playerNameInput">Name </label>
+        <label></label><input type="text" id="playerNameInput" placeholder="Enter player name" />
+        <button onclick="addPlayer()">Add Player</button>
+    </form>
+    <br>
+    <input type="text" id="playerNameIp" placeholder="Enter player name" />
+    <button onclick="removePlayer()">Remove Player</button>
+
+    <h3 style="text-align:left; box-shadow: inset;">Players List:</h3>
+    <ol id="playerList" style="text-align: left; font-family: Verdana, Geneva, Tahoma, sans-serif;"></ol>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

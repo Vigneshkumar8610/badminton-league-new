@@ -1,0 +1,20 @@
+body {
+    color: white;
+    background-image: url('images/bgImg.jpg');
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+    float: right;
+    margin-left: 15px;
+}
+#plist{
+    text-align: center;
+}

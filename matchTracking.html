@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badminton League</title>
+</head>
+<style>
+    #nav-item{
+        list-style: none;
+        float: right;
+        margin-left: 15px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      list-style: none;
+    }
+
+    nav ul li {
+      float: right;
+      margin-left: 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 16px;
+      display: inline-block;
+    }
+
+    nav ul li a:hover {
+      background-color: #444;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    table {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    td {
+      padding: 8px;
+    }
+
+    input[type="radio"],
+    input[type="number"] {
+      margin-right: 10px;
+    }
+
+    input[type="number"] {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li id="nav-item"><a href="leaderBoard.html"> Leaderboard / Stats</a></li>
+            <li id="nav-item"><a href="player.html">Player Management </a></li>
+            <li id="nav-item"><a href="index.html">Home Page</a></li>
+        </ul>
+    </nav>
+    <br>
+    <table>
+             <tr>
+                <td> <h3> the result of a match:</h3> </td>
+                <td><input type="radio"  name="winner">win</td>
+                <td><input type="radio"  name="winner">loss</td>
+             </tr>
+             <h3>Wins and Losses Percentage</h3>
+             <tr>
+                <td>wins:</td><td><input type="number"></td>
+             </tr>
+             <tr>
+                <td>Losses:</td><td><input type="number"></td>
+             </tr>
+          </table>
+    
+</body>
+</html>
